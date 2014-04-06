@@ -37,7 +37,7 @@
 + (UIColor *) turquoiseColor {
     static UIColor *turquoise = nil;
     static dispatch_once_t dispatchToken;
-
+    
     dispatch_once(&dispatchToken, ^{
         turquoise = [UIColor colorFromHexCode:@"1ABC9C"];
     });
